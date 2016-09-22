@@ -20,7 +20,7 @@ function fib(n) {
 	  }
 
 	  let resultArr = mfib(n-1);
-	  resultArr.push(mfib(n-1)[mfib(n-1).length -1] + mfib(n-1)[mfib(n-1).length - 2]);
+	  resultArr.push(mfib(n-1)[n-2] + mfib(n-1)[n-3]);
 	  return resultArr;
 }
 
